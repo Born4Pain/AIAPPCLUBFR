@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoreAI.club | AI-Powered App Store</title>
+    <meta name="description" content="Discover and run AI-powered apps instantly at StoreAI.club - The premier destination for AI applications">
+    
+    <!-- Accessibility -->
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#5e5ce6">
+    
+    <!-- Favicon and App Icons -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="images/icon-192.png">
+    
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Preload Hero Image -->
+    <link rel="preload" href="images/hero-device.png" as="image">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header>
+        <nav class="top-nav" role="navigation" aria-label="Main navigation">
+            <div class="nav-logo">
+                <i class="fas fa-brain" aria-hidden="true"></i> 
+                <span>StoreAI.club</span>
+            </div>
+            <div class="nav-links">
+                <a href="#today" class="nav-item active" aria-current="page">Today</a>
+                <a href="#apps" class="nav-item">Apps</a>
+                <a href="#search" class="nav-item">Search</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main id="main-content">
+        <section class="hero-section" aria-labelledby="hero-title">
+            <div class="hero-background" aria-hidden="true"></div>
+            <div class="hero-content">
+                <h1 id="hero-title">Discover Amazing AI Apps</h1>
+                <p>Explore and run AI-powered apps directly in your browser with StoreAI.club.</p>
+                <button class="hero-button" aria-label="Explore AI apps now">Explore Now</button>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-device.png" alt="AI app demo on a device" width="400" height="300">
+            </div>
+        </section>
+
+        <section class="featured-section" id="apps" aria-labelledby="featured-title">
+            <h2 id="featured-title" class="section-title">Featured Apps</h2>
+            <div class="app-list">
+                <article class="app-card" role="article">
+                    <div class="app-preview">
+                        <img src="images/chatbot-preview.jpg" alt="AI Chatbot interface preview" loading="lazy" width="320" height="180">
+                    </div>
+                    <div class="app-info">
+                        <div class="app-icon" style="background-color: #3182ce;">
+                            <i class="fas fa-comment-dots" aria-hidden="true"></i>
+                        </div>
+                        <div class="app-details">
+                            <h2>AI Chatbot</h2>
+                            <span class="app-category">Productivity</span>
+                            <div class="app-rating" aria-label="4.5 out of 5 stars">
+                                <div class="stars">
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+                                </div>
+                                <span>4.5</span>
+                            </div>
+                            <button class="app-button" onclick="runSample('chatbot.py')" aria-label="Get AI Chatbot app">
+                                <span class="button-text">Get</span>
+                                <div class="loader" aria-hidden="true"></div>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="app-card" role="article">
+                    <div class="app-preview">
+                        <img src="images/imagegen-preview.jpg" alt="Image Generator app preview" loading="lazy" width="320" height="180">
+                    </div>
+                    <div class="app-info">
+                        <div class="app-icon" style="background-color: #ed8936;">
+                            <i class="fas fa-image" aria-hidden="true"></i>
+                        </div>
+                        <div class="app-details">
+                            <h2>Image Generator</h2>
+                            <span class="app-category">Graphics</span>
+                            <div class="app-rating" aria-label="4.0 out of 5 stars">
+                                <div class="stars">
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="far fa-star" aria-hidden="true"></i>
+                                </div>
+                                <span>4.0</span>
+                            </div>
+                            <button class="app-button" onclick="runSample('imagegen.py')" aria-label="Get Image Generator app">
+                                <span class="button-text">Get</span>
+                                <div class="loader" aria-hidden="true"></div>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="app-card" role="article">
+                    <div class="app-preview">
+                        <img src="images/summarizer-preview.jpg" alt="Text Summarizer app preview" loading="lazy" width="320" height="180">
+                    </div>
+                    <div class="app-info">
+                        <div class="app-icon" style="background-color: #805ad5;">
+                            <i class="fas fa-brain" aria-hidden="true"></i>
+                        </div>
+                        <div class="app-details">
+                            <h2>Text Summarizer</h2>
+                            <span class="app-category">Utilities</span>
+                            <div class="app-rating" aria-label="5.0 out of 5 stars">
+                                <div class="stars">
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                </div>
+                                <span>5.0</span>
+                            </div>
+                            <button class="app-button" onclick="runSample('summarizer.py')" aria-label="Get Text Summarizer app">
+                                <span class="button-text">Get</span>
+                                <div class="loader" aria-hidden="true"></div>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        <section class="upload-section" aria-labelledby="upload-title">
+            <h2 id="upload-title" class="section-title">Try Your Own Script</h2>
+            <div class="upload-card">
+                <div class="app-icon" style="background-color: #48bb78;">
+                    <i class="fas fa-upload" aria-hidden="true"></i>
+                </div>
+                <div class="app-details">
+                    <h2>Upload an AI Script</h2>
+                    <p class="app-description">Run your own AI Python script in the browser - powered by WebAssembly and Pyodide</p>
+                    <div class="file-upload-container">
+                        <label for="fileInput" class="file-upload-label">
+                            <i class="fas fa-file-code" aria-hidden="true"></i>
+                            <span>Choose a .py file</span>
+                        </label>
+                        <input type="file" id="fileInput" accept=".py" aria-describedby="fileName" />
+                        <p id="fileName" class="file-name"></p>
+                    </div>
+                    <div class="button-group">
+                        <button id="runButton" onclick="runCode()" disabled class="app-button" aria-label="Run uploaded script">
+                            <span class="button-text">Run</span>
+                            <div class="loader" aria-hidden="true"></div>
+                        </button>
+                        <button onclick="clearOutput()" aria-label="Clear output console">Clear</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="output-section" aria-labelledby="output-title">
+            <div class="output-header">
+                <h2 id="output-title">Output</h2>
+                <button class="refresh-btn" onclick="clearOutput()" aria-label="Refresh output console">
+                    <i class="fas fa-sync-alt" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div id="output" role="log" aria-live="polite">Upload or select an app to see the output...</div>
+        </section>
+    </main>
+    
+    <footer role="contentinfo">
+        <div class="footer-links">
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Support</a>
+        </div>
+        <p>© 2025 StoreAI.club | <i class="fas fa-brain" aria-hidden="true"></i> Bringing AI to your browser</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+    <script src="script.js"></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').then(registration => {
+                    console.log('ServiceWorker registration successful');
+                }).catch(error => {
+                    console.log('ServiceWorker registration failed:', error);
+                });
+            });
+        }
+    </script>
+</body>
+</html> 
